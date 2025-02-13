@@ -1,0 +1,48 @@
+{
+
+  'constants':
+
+  {
+    'cp': 1004.0, #calor específico a presión constante
+    'cv': 787.0,  #calor específico a volumen constante
+    'R': 287.0,   #constante del aire seco
+    'mu': 0.0,    #coeficiente de difusión
+    'g': 9.81,    #aceleración de la gravedad
+    'c': 340.0,   #velocidad del sonido en el aire
+    'dx': 100.0,  #resolución horizontal
+    'dz': 100.0,   #resolución vertical
+    'gamma': 0.9,  #factor a aplicar a la resolución temporal una vez establecida condición CFL
+    'theta_mean0': 300.0, #temperatura potencial ambiente
+    'theta_c': -30.0 #magnitud de la perturbación de temperatura potencial
+  }
+
+,
+
+'methods':
+
+{
+  'upwind': False,
+  'rea_minmod': True
+}
+
+,
+
+'test_cases':
+
+{
+  'density_current': True,
+  'warm_bubble': False
+
+}
+
+,
+
+'parameters_test_cases':
+
+{
+  'density_current': {'xc': 0.0, 'zc': 3000.0, 'xr': 4000.0, 'zr': 2000.0, 'r_c': 1.0},
+  'warm_bubble': {'a': , 's': }
+
+}
+
+}
